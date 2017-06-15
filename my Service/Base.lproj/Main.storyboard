@@ -90,7 +90,11 @@
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="T4d-rb-as3"/>
-                                    <barButtonItem title="Save New user" id="utu-xs-tMi"/>
+                                    <barButtonItem title="Save New user" id="utu-xs-tMi">
+                                        <connections>
+                                            <action selector="saveButton:" destination="oIx-7r-4Yi" id="f1r-YU-heG"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="AUW-T9-qeB"/>
                                 </items>
                             </toolbar>
@@ -105,6 +109,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Grc-yR-SnE">
                                 <rect key="frame" x="61" y="393" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -112,6 +117,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-8i-ueu">
                                 <rect key="frame" x="68" y="284" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -119,6 +125,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="ahl-ir-79S" id="Hms-ed-Jue"/>
+                        <outlet property="passwordTextField" destination="Grc-yR-SnE" id="JgE-1U-pGV"/>
+                        <outlet property="userTextField" destination="bTc-8i-ueu" id="pFp-c5-3es"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLr-qg-01s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
