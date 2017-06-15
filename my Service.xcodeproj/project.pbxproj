@@ -12,6 +12,11 @@
 		F9D578581EF25CFA0024AD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D578561EF25CFA0024AD85 /* Main.storyboard */; };
 		F9D5785A1EF25CFA0024AD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D578591EF25CFA0024AD85 /* Assets.xcassets */; };
 		F9D5785D1EF25CFA0024AD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D5785B1EF25CFA0024AD85 /* LaunchScreen.storyboard */; };
+		F9D578651EF27E000024AD85 /* AddNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D578641EF27E000024AD85 /* AddNewUserViewController.swift */; };
+		F9D578671EF281E30024AD85 /* bggg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9D578661EF281E30024AD85 /* bggg.jpg */; };
+		F9D578691EF285C90024AD85 /* ic_note_add.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D578681EF285C90024AD85 /* ic_note_add.png */; };
+		F9D5786B1EF285CF0024AD85 /* ic_note_add_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D5786A1EF285CF0024AD85 /* ic_note_add_3x.png */; };
+		F9D5786D1EF285D40024AD85 /* ic_note_add_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D5786C1EF285D40024AD85 /* ic_note_add_2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F9D578591EF25CFA0024AD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9D5785C1EF25CFA0024AD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9D5785E1EF25CFA0024AD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D578641EF27E000024AD85 /* AddNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewUserViewController.swift; sourceTree = "<group>"; };
+		F9D578661EF281E30024AD85 /* bggg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bggg.jpg; path = ../../../../Desktop/bggg.jpg; sourceTree = "<group>"; };
+		F9D578681EF285C90024AD85 /* ic_note_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add.png; path = ../../../../Desktop/ic_note_add.png; sourceTree = "<group>"; };
+		F9D5786A1EF285CF0024AD85 /* ic_note_add_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add_3x.png; path = ../../../../Desktop/ic_note_add_3x.png; sourceTree = "<group>"; };
+		F9D5786C1EF285D40024AD85 /* ic_note_add_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add_2x.png; path = ../../../../Desktop/ic_note_add_2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +64,14 @@
 		F9D578511EF25CFA0024AD85 /* my Service */ = {
 			isa = PBXGroup;
 			children = (
+				F9D578661EF281E30024AD85 /* bggg.jpg */,
+				F9D578681EF285C90024AD85 /* ic_note_add.png */,
+				F9D5786A1EF285CF0024AD85 /* ic_note_add_3x.png */,
+				F9D5786C1EF285D40024AD85 /* ic_note_add_2x.png */,
 				F9D578521EF25CFA0024AD85 /* AppDelegate.swift */,
 				F9D578541EF25CFA0024AD85 /* ViewController.swift */,
 				F9D578561EF25CFA0024AD85 /* Main.storyboard */,
+				F9D578641EF27E000024AD85 /* AddNewUserViewController.swift */,
 				F9D578591EF25CFA0024AD85 /* Assets.xcassets */,
 				F9D5785B1EF25CFA0024AD85 /* LaunchScreen.storyboard */,
 				F9D5785E1EF25CFA0024AD85 /* Info.plist */,
@@ -125,7 +140,11 @@
 			files = (
 				F9D5785D1EF25CFA0024AD85 /* LaunchScreen.storyboard in Resources */,
 				F9D5785A1EF25CFA0024AD85 /* Assets.xcassets in Resources */,
+				F9D5786B1EF285CF0024AD85 /* ic_note_add_3x.png in Resources */,
+				F9D578671EF281E30024AD85 /* bggg.jpg in Resources */,
+				F9D578691EF285C90024AD85 /* ic_note_add.png in Resources */,
 				F9D578581EF25CFA0024AD85 /* Main.storyboard in Resources */,
+				F9D5786D1EF285D40024AD85 /* ic_note_add_2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D578551EF25CFA0024AD85 /* ViewController.swift in Sources */,
+				F9D578651EF27E000024AD85 /* AddNewUserViewController.swift in Sources */,
 				F9D578531EF25CFA0024AD85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
