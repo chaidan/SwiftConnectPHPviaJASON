@@ -17,6 +17,9 @@
 		F9D578691EF285C90024AD85 /* ic_note_add.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D578681EF285C90024AD85 /* ic_note_add.png */; };
 		F9D5786B1EF285CF0024AD85 /* ic_note_add_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D5786A1EF285CF0024AD85 /* ic_note_add_3x.png */; };
 		F9D5786D1EF285D40024AD85 /* ic_note_add_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D5786C1EF285D40024AD85 /* ic_note_add_2x.png */; };
+		F9D578711EF288840024AD85 /* ic_keyboard_arrow_left_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D5786E1EF288840024AD85 /* ic_keyboard_arrow_left_2x.png */; };
+		F9D578721EF288840024AD85 /* ic_keyboard_arrow_left_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D5786F1EF288840024AD85 /* ic_keyboard_arrow_left_3x.png */; };
+		F9D578731EF288840024AD85 /* ic_keyboard_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = F9D578701EF288840024AD85 /* ic_keyboard_arrow_left.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		F9D578681EF285C90024AD85 /* ic_note_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add.png; path = ../../../../Desktop/ic_note_add.png; sourceTree = "<group>"; };
 		F9D5786A1EF285CF0024AD85 /* ic_note_add_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add_3x.png; path = ../../../../Desktop/ic_note_add_3x.png; sourceTree = "<group>"; };
 		F9D5786C1EF285D40024AD85 /* ic_note_add_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_note_add_2x.png; path = ../../../../Desktop/ic_note_add_2x.png; sourceTree = "<group>"; };
+		F9D5786E1EF288840024AD85 /* ic_keyboard_arrow_left_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_keyboard_arrow_left_2x.png; path = ../../../../Downloads/ic_keyboard_arrow_left_black_24dp/ios/ic_keyboard_arrow_left.imageset/ic_keyboard_arrow_left_2x.png; sourceTree = "<group>"; };
+		F9D5786F1EF288840024AD85 /* ic_keyboard_arrow_left_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_keyboard_arrow_left_3x.png; path = ../../../../Downloads/ic_keyboard_arrow_left_black_24dp/ios/ic_keyboard_arrow_left.imageset/ic_keyboard_arrow_left_3x.png; sourceTree = "<group>"; };
+		F9D578701EF288840024AD85 /* ic_keyboard_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_keyboard_arrow_left.png; path = ../../../../Downloads/ic_keyboard_arrow_left_black_24dp/ios/ic_keyboard_arrow_left.imageset/ic_keyboard_arrow_left.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				F9D578681EF285C90024AD85 /* ic_note_add.png */,
 				F9D5786A1EF285CF0024AD85 /* ic_note_add_3x.png */,
 				F9D5786C1EF285D40024AD85 /* ic_note_add_2x.png */,
+				F9D5786E1EF288840024AD85 /* ic_keyboard_arrow_left_2x.png */,
+				F9D5786F1EF288840024AD85 /* ic_keyboard_arrow_left_3x.png */,
+				F9D578701EF288840024AD85 /* ic_keyboard_arrow_left.png */,
 				F9D578521EF25CFA0024AD85 /* AppDelegate.swift */,
 				F9D578541EF25CFA0024AD85 /* ViewController.swift */,
 				F9D578561EF25CFA0024AD85 /* Main.storyboard */,
@@ -139,9 +148,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D5785D1EF25CFA0024AD85 /* LaunchScreen.storyboard in Resources */,
+				F9D578711EF288840024AD85 /* ic_keyboard_arrow_left_2x.png in Resources */,
 				F9D5785A1EF25CFA0024AD85 /* Assets.xcassets in Resources */,
 				F9D5786B1EF285CF0024AD85 /* ic_note_add_3x.png in Resources */,
 				F9D578671EF281E30024AD85 /* bggg.jpg in Resources */,
+				F9D578731EF288840024AD85 /* ic_keyboard_arrow_left.png in Resources */,
+				F9D578721EF288840024AD85 /* ic_keyboard_arrow_left_3x.png in Resources */,
 				F9D578691EF285C90024AD85 /* ic_note_add.png in Resources */,
 				F9D578581EF25CFA0024AD85 /* Main.storyboard in Resources */,
 				F9D5786D1EF285D40024AD85 /* ic_note_add_2x.png in Resources */,
