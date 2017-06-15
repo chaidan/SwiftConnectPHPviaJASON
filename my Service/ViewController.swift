@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             // แสดงค่าที่รับจาก server ผ่าน response แสดง error ผ่น error
             data, responde, error in
             if error != nil {
+                // Error ตรงนี้ไม่เป็นไร ปล่อยไปก่อน มาสเตอร์ก็เป็นเหมือนกัน
                 print("Error-->\(error)")
             } else {
                 if let unwrappedData = data {
