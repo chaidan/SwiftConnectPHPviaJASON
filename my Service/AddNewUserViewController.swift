@@ -10,7 +10,11 @@ import UIKit
 
 class AddNewUserViewController: UIViewController {
     
-    
+    // implicit
+    var nameString: String? = nil
+    var userString: String? = nil
+    var passwordString: String? = nil
+
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -22,7 +26,27 @@ class AddNewUserViewController: UIViewController {
     
     
     @IBAction func saveButton(_ sender: Any) {
-    }
+       //Get value From TextField
+        nameString = nameTextField.text
+        userString = userTextField.text
+        passwordString = passwordTextField.text
+        
+        
+        // Check space
+        let intName = nameString?.characters.count
+        let intUser = userString?.characters.count
+        let intPassword = passwordString?.characters.count
+        
+        if (intName==0)||(intUser==0)||(intPassword==0) {
+            // Have space
+            print("Have space")
+        }else{
+        
+            print("No space")
+        
+        }
+        
+    } //save button
     
     
     
