@@ -52,23 +52,51 @@ class AddNewUserViewController: UIViewController {
             alertLabel.alpha = 0
             let strMyURL = "http://androidthai.in.th/snru/addUserChaidan.php?isAdd=true&Name=" + nameString! + "&User=" + userString! + "&Password=" + passwordString! + ""
             print("strMyURL-->\(strMyURL)")
+            uploadValuetoServer(strURL: strMyURL)
         }
         
     } //save button
     
     
-    
-    
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         print("This is AddNewUser")
         // Do any additional setup after loading the view.
     } // mainMethod
 
+    func uploadValuetoServer(strURL: String) -> Void {
+        // Process connected Http connect via JASON
+        let urlPHP = strURL
+        // Change String to url String
+        let myURL = URL(string: urlPHP)
+        let request1 = NSMutableURLRequest(url:myURL!)
+        // Create thread for URL
+        let task = URLSession.shared.dataTask(with: request1 as URLRequest){
+            // แสดงค่าที่รับจาก server ผ่าน response แสดง error ผ่น error
+            data, responde, error in
+            if error != nil {
+                // Error ตรงนี้ไม่เป็นไร ปล่อยไปก่อน มาสเตอร์ก็เป็นเหมือนกัน
+                print("Error")
+            } else {
+                if let unwrappedData = data {
+                    let dataString = NSString(data: unwrappedData, encoding:String.Encoding.utf8.rawValue)
+                    let strJSON=dataString as Any
+                    print("strJSON-->\(strJSON)")
+                }
+            }
+            
+        }
+        task.resume()
+    } //uploadValuetoServer function
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

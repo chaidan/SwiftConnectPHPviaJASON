@@ -34,11 +34,7 @@ class ViewController: UIViewController {
                 }
             }
             
-            
             }
-        
-
-        
         task.resume()
         
         // Do any additional setup after loading the view, typically from a nib.
