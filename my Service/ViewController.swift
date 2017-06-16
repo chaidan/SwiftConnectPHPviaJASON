@@ -32,6 +32,10 @@ class ViewController: UIViewController {
                 alertLabel.alpha = 1
         }else {
             alertLabel.alpha = 0
+            let strUrl = "http://androidthai.in.th/snru/getUserWhereChaidan.php?isAdd=true&User=" + strUser! + ""
+           print("strUrl-->\(strUrl)")
+            readJSON(strURL: strUrl)
+            
         } // if
         
         
