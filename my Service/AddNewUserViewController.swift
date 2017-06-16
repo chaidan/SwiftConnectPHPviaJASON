@@ -16,6 +16,11 @@ class AddNewUserViewController: UIViewController {
     var passwordString: String? = nil
 
     
+    @IBOutlet weak var alertLabel: UILabel!
+    
+    
+    
+    
     @IBOutlet weak var nameTextField: UITextField!
     
     
@@ -40,10 +45,13 @@ class AddNewUserViewController: UIViewController {
         if (intName==0)||(intUser==0)||(intPassword==0) {
             // Have space
             print("Have space")
+            alertLabel.alpha = 1
         }else{
         
             print("No space")
-        
+            alertLabel.alpha = 0
+            let strMyURL = "http://androidthai.in.th/snru/addUserChaidan.php?isAdd=true&Name=" + nameString! + "&User=" + userString! + "&Password=" + passwordString! + ""
+            print("strMyURL-->\(strMyURL)")
         }
         
     } //save button
