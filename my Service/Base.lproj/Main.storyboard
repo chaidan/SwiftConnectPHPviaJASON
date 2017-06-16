@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="my_Service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="my_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -56,12 +56,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.75" y="41.25"/>
+            <point key="canvasLocation" x="-73" y="41"/>
         </scene>
         <!--AddNewUser-->
         <scene sceneID="eZu-Ee-16E">
             <objects>
-                <viewController title="AddNewUser" id="oIx-7r-4Yi" customClass="AddNewUserViewController" customModule="my_Service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNewUserViewController" title="AddNewUser" id="oIx-7r-4Yi" customClass="AddNewUserViewController" customModule="my_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YHG-HI-aeq"/>
                         <viewControllerLayoutGuide type="bottom" id="lGR-m5-ajy"/>
@@ -137,11 +137,12 @@
                         <outlet property="nameTextField" destination="ahl-ir-79S" id="Hms-ed-Jue"/>
                         <outlet property="passwordTextField" destination="Grc-yR-SnE" id="JgE-1U-pGV"/>
                         <outlet property="userTextField" destination="bTc-8i-ueu" id="pFp-c5-3es"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackHome" id="cmp-rR-hb0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLr-qg-01s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733.60000000000002" y="40.929535232383813"/>
+            <point key="canvasLocation" x="1017" y="41"/>
         </scene>
     </scenes>
     <resources>
@@ -149,4 +150,7 @@
         <image name="ic_keyboard_arrow_left_2x.png" width="48" height="48"/>
         <image name="ic_note_add_2x.png" width="48" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cmp-rR-hb0"/>
+    </inferredMetricsTieBreakers>
 </document>
