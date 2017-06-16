@@ -66,7 +66,18 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiP-fF-qjU"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill a forms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1I-jV-VwM">
+                                <rect key="frame" x="71" y="353" width="268" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -75,6 +86,11 @@
                             <constraint firstItem="zN0-bj-vfz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S5I-bi-1EY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alertLabel" destination="m1I-jV-VwM" id="lCk-OO-asb"/>
+                        <outlet property="passwordTextField" destination="gdK-dm-Sdb" id="kOa-ep-iVm"/>
+                        <outlet property="userTextField" destination="G8E-4G-lDV" id="i4G-TZ-azb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
