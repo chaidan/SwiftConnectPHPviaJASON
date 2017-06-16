@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var myString = ""
     var strUser: String? = nil
     var strPassword: String? = nil
-
+    var strMyJSON = ""
     
     @IBOutlet weak var userTextField: UITextField!
     
@@ -94,6 +94,37 @@ class ViewController: UIViewController {
                     let dataString = NSString(data: unwrappedData, encoding:String.Encoding.utf8.rawValue)
                     let strJSON=dataString as Any
                     print("strJSON-->\(strJSON)")
+                    /*
+                    if strJSON != nil{
+                        print("dataString not nil")
+                    }else {
+                        print("dataString nil")
+                    }
+                    */
+                    
+                    
+                    
+                    let strKey = ","
+                    if let myContentArray = dataString?.components(separatedBy: strKey){
+                    
+                        print("myContentArray[0]-->\(myContentArray[2])")
+                        print("myContentArray[1]-->\(myContentArray[3])")
+                        
+                        //Check Password
+                        let myPassword = "\"Password\":\"" + self.strPassword! + "\"}]"
+                        if myPassword == myContentArray[3] {
+                            //Password True
+                            print("Password True")
+                         //   performSegue(withIdentifier: "GoToMap", sender: p[)
+                        }   else {
+                            //Password False
+                            print("Password False")
+                        }
+                        
+                        
+                        
+                        
+                    } // if
                 }
             }
         }

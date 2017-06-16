@@ -90,6 +90,7 @@
                         <outlet property="alertLabel" destination="m1I-jV-VwM" id="lCk-OO-asb"/>
                         <outlet property="passwordTextField" destination="gdK-dm-Sdb" id="kOa-ep-iVm"/>
                         <outlet property="userTextField" destination="G8E-4G-lDV" id="i4G-TZ-azb"/>
+                        <segue destination="qgQ-tw-8wb" kind="show" identifier="GoToMap" id="cOu-P3-B3v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -181,6 +182,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLr-qg-01s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="41"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="hyg-2E-Mvv">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" title="Map" id="qgQ-tw-8wb" customClass="MapViewController" customModule="my_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l8C-mP-YAa"/>
+                        <viewControllerLayoutGuide type="bottom" id="nNY-aE-2ML"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X7C-b4-t4h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjk-nS-cxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986" y="64"/>
         </scene>
     </scenes>
     <resources>
